@@ -1,33 +1,137 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    font: 14px Arial, sans-serif;
+    margin: 5px;
+    background-color: black;
+    color: white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.container {
+    width: 100%;
+}
+
+.nav {
+    width: 13%;
+    margin-right: 1%;
+}
+
+.nav ul {
+    list-style: none;
+    line-height: 24px;
+    padding-left: 10px;
+}
+
+li {
+    vertical-align: middle;
+}
+
+.search {
+    width: 71%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.profile {
+    width: 15%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.main {
+    width: 85%;
+}
+
+.nav,
+.search,
+.profile,
+.main {
+    float: left;
+    min-height: 50px;
+    box-sizing: border-box;
+}
+
+input {
+    background-color: transparent;
+    border: 1px #434343 solid;
+    border-radius: 20px 0px 0px 20px;
+    width: 50%;
+    height: 41px;
+    padding-left: 10px;
+}
+
+.searchsubmit {
+    background-color: #2b2b2b;
+    border: 1px #434343 solid;
+    border-radius: 0px 20px 20px 0px;
+    width: 7%;
+    height: 44px;
+}
+
+.mic {
+    background-color: #2b2b2b;
+    border: 1px #434343 solid;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+}
+
+.acount {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+}
+
+.noborder {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.topic {
+    width: 90%;
+    margin-top: 48px;
+    padding-left: 10%;
+    border-bottom: 1px gray solid;
+}
+
+.type {
+    background-color: transparent;
+    color: gray;
+    border: none;
+}
+
+.type_selected {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px white solid;
+}
+
+.video {
+    width: 30%;
+    padding-left: 9.5%;
+}
+
+.description{
+    width: 70%;
+}
+
+.video,
+.description {
+    float: left;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+p, img {
+    cursor: pointer;
 }
